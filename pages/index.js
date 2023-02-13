@@ -32,7 +32,9 @@ export default function Home() {
           Unsere Mitarbeiter mit jeweils 20 Jahren Erfahrung auf den jeweiligen Gebieten, werden sich sauber, fachgerecht und professionell um ihr Vorhaben kümmern.
           Unser Angebotsspektrum umfasst einzelne Baureparaturen bis hin zum Neubau:
           </p>
+          <Link href='/leistungen'>
           <button className='p-4 w-auto rounded-lg shadow-lg bg-[#064da0] text-white text-xl hover:bg-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Mehr Erfahren!</button>
+          </Link>
         </div>
       </div>
 
