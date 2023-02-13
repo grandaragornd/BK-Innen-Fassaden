@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React, {useState} from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineWhatsApp, AiOutlineInstagram} from "react-icons/ai";
-import { Logobk, Logosmall } from './svgs';
+import { Logosmall } from './svgs';
 
 
 
@@ -19,9 +19,9 @@ const Navbar = () => {
           {/* MAIN NAVBAR */}
           <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
                 <Link href='./' className='pl-[20px] flex items-center'>
-                    <Logosmall />
-                    <p className='text-md'>BK Innenputz & Fassaden GmbH</p>
-                </Link>
+                    <Logosmall className='svg'/>
+                    <p className='text-md inline-block'>BK Innenputz & Fassaden GmbH</p>
+                </Link>  
             <div className='px-[20px]'>
                 <ul className='uppercase hidden md:flex'>
                     <Link href='/'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Startseite</li></Link>
