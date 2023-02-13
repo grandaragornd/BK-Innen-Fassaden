@@ -11,6 +11,9 @@ html, body{
   background-color: white;
   font-family: 'DM Sans', sans-serif;
   border: 0px;
+  margin: 0px;
+  padding: 0px;
+	vertical-align: baseline;
 }
 
 li{
@@ -30,12 +33,6 @@ li{
   background-attachment: fixed;
 }
 
-.leistungenbackground{
-  background-image: url('https://images.unsplash.com/photo-1587582423116-ec07293f0395?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .bg{
   background-color: white;
   border-color: #1B1B1B;
@@ -45,23 +42,6 @@ li{
 .bgcustom{
   background-color: #F9F4F4;
   color: #1B1B1B;
-}
-
-.mapimage{
-  background-image: url('https://images.unsplash.com/photo-1548345680-f5475ea5df84?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80');
-  background-size: cover;
-}
-
-.writer-text {
-  display: inline-block;
-  overflow: hidden;
-  letter-spacing: 2px;
- animation: typing 5s steps(30, end), blink .75s step-end infinite;
-  white-space: nowrap;
-  font-size: 30px;
-  font-weight: 700;
-  border-right: 4px solid orange;
-  box-sizing: border-box;
 }
 
 

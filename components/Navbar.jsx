@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React, {useState} from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineWhatsApp, AiOutlineInstagram} from "react-icons/ai";
-import { Logobk, Logosm, Logosmall } from './svgs';
+import { Logobk, Logosmall } from './svgs';
 
 
 
@@ -18,8 +18,9 @@ const Navbar = () => {
         <div className='w-full h-20 z-[100] inline-block'>
           {/* MAIN NAVBAR */}
           <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
-                <Link href='./' className='text-5xl pl-[20px]'>
-                    <Logosmall /> 
+                <Link href='./' className='pl-[20px] flex items-center'>
+                    <Logosmall />
+                    <p className='text-md'>BK Innenputz & Fassaden GmbH</p>
                 </Link>
             <div className='px-[20px]'>
                 <ul className='uppercase hidden md:flex'>
@@ -27,12 +28,12 @@ const Navbar = () => {
                     <Link href='/leistungen'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Leistungen</li></Link>
                     <Link href='/projekte'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Projekte</li></Link>
                     <Link href='/kontakt' className='px-5'><li className='text-xl hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] text-white rounded-xl'>Kontakt</li></Link>
-                    <div className='flex px-[30px] m-auto'>
+                    <div className='flex px-[30px] items-center'>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://api.whatsapp.com/send/?phone=4917636082388&text&type=phone_number&app_absent=0' target='_blank'><AiOutlineWhatsApp size={25}></AiOutlineWhatsApp></Link></li>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://www.instagram.com/bkgmbh/' target='_blank'><AiOutlineInstagram size={25}></AiOutlineInstagram></Link></li>
                     </div>
                 </ul>
-                <div onClick={handleNav} className='md:hidden cursor-pointer px-5 pr-[20px]'>
+                <div onClick={handleNav} className='md:hidden cursor-pointer px-5'>
                     <AiOutlineMenu size={25}/>
                 </div>
             </div>
