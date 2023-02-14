@@ -4,7 +4,6 @@ import Form from '@/components/Form'
 import Header from '@/components/Header'
 import { Logobk } from '@/components/svgs'
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
@@ -20,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      
+
       <div className='w-full inline-block grid grid-cols-1 sm:grid-cols-2'>
         <div className='w-full p-[50px]'>
             <h2 className='text-2xl font-semibold'>Das Bauunternehmen aus Hamburg fur vielfaltige Bauvorhaven</h2>
@@ -40,8 +39,8 @@ export default function Home() {
       </div>
 
       <section className='h-auto w-full grid grid-cols-1 sm:grid-cols-2'>
-        <div className='text-center items-center p-[50px] max-w-sm hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>
-            <Logobk />
+        <div className='flex justify-center items-center'>
+            <Logobk className=''/>
         </div>
         <div className='container p-[50px] w-auto'>
             <h2 className='text-3xl py-3 font-semibold'>Unser Team</h2>

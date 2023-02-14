@@ -19,7 +19,7 @@ const Navbar = () => {
           
           <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
                 <Link href='./' className='pl-[20px] flex items-center'>
-                    <Logosmall className='svg'/>
+                    <h2 className='p-2 text-2xl'>LOGO</h2>
                     <p className='text-md inline-block'>BK Innenputz & Fassaden GmbH</p>
                 </Link>  
             <div className='px-[20px]'>

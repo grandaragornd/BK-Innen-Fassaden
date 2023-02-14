@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 const Form = () => {
   return (
-    <main className='w-full place-items-center grid h-[100vh]'>
+    <main className='w-full flex justify-center'>
       {/*contact card*/}
       <div className="flex ">
         <div className="max-w-full m-auto items-center gap-10">
-          <div className="p-5 w-auto block">
+          <div className="p-[50px] w-auto block">
           <form action="https://getform.io/f/86537289-4693-4bb5-b5fa-ef02736c1a18" method="POST">
             <div className='inline-block'>
                 <h2 className='text-2xl font-semibold py-3'>Kontakt Formular</h2>
@@ -58,7 +58,7 @@ const Form = () => {
               ></textarea>
             </div>
             <div className='p-[15px] flex items-center'>
-              <span className='relative'><input type='checkbox' required ></input></span>
+              <span><input type='checkbox' required></input></span>
               <p className='text-lg px-4'>Ich habe die Datenschutzerklärung zur Kenntnis genommen und erkläre mich damit einverstanden.</p>
             </div>
             <div className="flex text-center items-center justify-around">
