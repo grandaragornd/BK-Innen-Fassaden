@@ -15,8 +15,8 @@ const Navbar = () => {
       };
 
     return <>
-        <div className='w-full h-20 z-[100] inline-block'>
-          {/* MAIN NAVBAR */}
+    <div className='w-full h-20 z-[100] inline-block'>
+          
           <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
                 <Link href='./' className='pl-[20px] flex items-center'>
                     <Logosmall className='svg'/>
@@ -40,9 +40,9 @@ const Navbar = () => {
         </div>
         {/* END MAIN NAVBAR */}
         {/* PHONE/TABLET NAVBAR */}
-            <div className={nav ? 'fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
+            <div className={nav ? 'fixed left-0 top-0 w-full h-[150vh] bg-black/70' : ''}>
                 <div className={
-                  nav ? 'fixed absolute left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#064da0] ease-in duration-500'
+                  nav ? 'fixed absolute left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-[150vh] bg-[#064da0] ease-in duration-500'
                   : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
                   }>
                     {/* INSIDEMENU */}
@@ -68,7 +68,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-    </>
+            </>
 }
 
 export default Navbar
