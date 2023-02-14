@@ -1,6 +1,6 @@
 
 import Link from 'next/link'
-import React, {useState} from 'react'
+import React, {useState, useEffect } from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineWhatsApp, AiOutlineInstagram} from "react-icons/ai";
 import { Logosmall } from './svgs';
 
@@ -14,9 +14,37 @@ const Navbar = () => {
         setNav(prev => !prev);
       };
 
+    // HIDE ON SCROLL
+    const [show, setShow] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+  
+    const controlNavbar = () => {
+      if (typeof window !== 'undefined') { 
+        if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
+          setShow(true); 
+        } else { // if scroll up show the navbar
+          setShow(false);  
+        }
+  
+        // remember current page location to use in the next move
+        setLastScrollY(window.scrollY); 
+      }
+    };
+  
+    useEffect(() => {
+      if (typeof window !== 'undefined') {
+        window.addEventListener('scroll', controlNavbar);
+  
+        // cleanup function
+        return () => {
+          window.removeEventListener('scroll', controlNavbar);
+        };
+      }
+    }, [lastScrollY]);
+
     return <>
-    <div className='w-full h-20 z-[100] inline-block'>
-          
+    <div className='w-full h-20 z-[100] inline-block '>
+          <div className={`active ${show && 'hidden'}`}>
           <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
                 <Link href='./' className='pl-[20px] flex items-center'>
                     <h2 className='p-2 text-2xl'>LOGO</h2>
@@ -36,6 +64,7 @@ const Navbar = () => {
                 <div onClick={handleNav} className='md:hidden cursor-pointer px-5'>
                     <AiOutlineMenu size={25}/>
                 </div>
+            </div>
             </div>
         </div>
         {/* END MAIN NAVBAR */}

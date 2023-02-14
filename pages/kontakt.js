@@ -58,7 +58,7 @@ const kontakt = () => {
               ></textarea>
             </div>
             <div className='p-[15px] flex items-center'>
-              <span className='relative'><input type='checkbox' required ></input></span>
+              <span><input type='checkbox' required ></input></span>
               <p className='text-lg px-4 text-white'>Ich habe die Datenschutzerklärung zur Kenntnis genommen und erkläre mich damit einverstanden.</p>
             </div>
             <div className="flex text-center items-center justify-around">
