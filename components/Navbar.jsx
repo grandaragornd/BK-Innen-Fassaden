@@ -1,9 +1,9 @@
-
 import Link from 'next/link'
 import React, {useState, useEffect } from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineWhatsApp, AiOutlineInstagram} from "react-icons/ai";
-import { Logosmall } from './svgs';
-
+import Image from 'next/image';
+import Logotrs from '../public/Logotrs.png'
+import logotransparentwhite from '../public/logotransparentwhite.png'
 
 
 const Navbar = () => {
@@ -46,16 +46,18 @@ const Navbar = () => {
     <div className='w-full h-20 z-[100] inline-block '>
           <div className={`active ${show && 'hidden'}`}>
           <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
-                <Link href='./' className='pl-[20px] flex items-center'>
-                    <h2 className='p-2 text-2xl'>LOGO</h2>
-                    <p className='text-md inline-block'>BK Innenputz & Fassaden GmbH</p>
-                </Link>  
+          <Link href='/'>
+                <div className='pl-[20px] flex items-center'>
+                    <Image src={Logotrs} alt='logo' height='120' width='120'></Image>
+                    <p className='text-md w-full hover:text-[#0868d9]'>BK Innenputz & Fassaden GmbH</p>  
+                </div>
+            </Link>
             <div className='px-[20px]'>
                 <ul className='uppercase hidden md:flex'>
                     <Link href='/'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Startseite</li></Link>
                     <Link href='/leistungen'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Leistungen</li></Link>
                     <Link href='/projekte'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Projekte</li></Link>
-                    <Link href='/kontakt' className='px-5'><li className='text-xl hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] text-white rounded-xl'>Kontakt</li></Link>
+                    <Link href='/kontakt' className='px-5'><li className='text-xl hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] hover:bg-[#0868d9] text-white rounded-xl'>Kontakt</li></Link>
                     <div className='flex px-[30px] items-center'>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://api.whatsapp.com/send/?phone=4917636082388&text&type=phone_number&app_absent=0' target='_blank'><AiOutlineWhatsApp size={25}></AiOutlineWhatsApp></Link></li>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://www.instagram.com/bkgmbh/' target='_blank'><AiOutlineInstagram size={25}></AiOutlineInstagram></Link></li>
@@ -77,7 +79,7 @@ const Navbar = () => {
                     {/* INSIDEMENU */}
                     <div>
                         <div className='p-10 flex w-full items-center justify-between bg-[#064da0] text-white shadow-lg'>
-                            <h2 className='text-white text-3xl'>BK</h2>
+                        <Image src={logotransparentwhite} alt='logo' height='150' width='150'></Image>
                             <div onClick={handleNav} className='rounded-full shadow-lg p-3 cursor-pointer'>
                             <AiOutlineClose size={25}/>
                             </div>

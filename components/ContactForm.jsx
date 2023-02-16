@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactForm = () => {
   return (
-    <div className='w-full inline-block h-screen'>
+    <div className='w-full inline-block'>
       <div className='grid gap-5 grid-cols-1 sm:grid-cols-2 text-center inline-block p-[40px] pb-[100px]'>
         <div>
           <h2 className='py-4 text-2xl font-semibold'>Kontakt</h2>

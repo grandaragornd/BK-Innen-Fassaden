@@ -38,7 +38,6 @@ body {
   position: absolute;
 }
 
-
 .svg{
   width: 24%;
 }
@@ -54,10 +53,16 @@ li{
   color: black;
 }
 
+.logobg{
+  background-image: url('../public/Logotrs.png');
+}
+
 .headerbackground{
   background-image: url('../public/backgroundimagebk.jpeg');
-  background-size: cover;
   background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
 .bg{

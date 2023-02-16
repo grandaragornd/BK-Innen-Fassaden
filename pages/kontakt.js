@@ -3,9 +3,9 @@ import React from 'react'
 
 const kontakt = () => {
   return (
-      <main className='w-full place-items-center headerbackground headertext inline-block h-screen'>
+      <main className='w-full headertext h-screen'>
       {/*contact card*/}
-      <div className="flex">
+      <div className="">
         <div className="max-w-full m-auto items-center gap-10">
           <div className="p-5 w-auto block">
           <form action="https://getform.io/f/86537289-4693-4bb5-b5fa-ef02736c1a18" method="POST">

@@ -40,7 +40,7 @@ export default function Home() {
 
       <section className='h-auto w-full grid grid-cols-1 sm:grid-cols-2'>
         <div className='flex justify-center items-center'>
-            <Logobk className=''/>
+            <Logobk/>
         </div>
         <div className='container p-[50px] w-auto'>
             <h2 className='text-3xl py-3 font-semibold'>Unser Team</h2>
