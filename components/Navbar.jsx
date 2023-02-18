@@ -69,12 +69,12 @@ useEffect( () => {
 
     return <>
     <div className='w-full h-20 z-[100] inline-block '>
-          <div className={`h-[14vh] sticky ${visible ? '' : 'ease-in duration-200 hidden'} `} id='navbar'>
+          <div className={`${visible ? '' : 'hidden'} `} id='navbar'>
           <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
           <Link href='/'>
                 <div className='pl-[20px] flex items-center'>
                     <Image src={Logotrs} alt='logo' height='120' width='120'></Image>
-                    <p className='text-md w-full hover:text-[#0868d9]'>BK Innenputz & Fassaden GmbH</p>  
+                    <p className='text-md hover:text-[#0868d9]'>BK Innenputz & Fassaden GmbH</p>  
                 </div>
             </Link>
             <div className='px-[20px]'>
