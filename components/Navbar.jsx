@@ -5,6 +5,37 @@ import Image from 'next/image';
 import Logotrs from '../public/Logotrs.png'
 import logotransparentwhite from '../public/logotransparentwhite.png'
 
+/* navbar on scroll hide 
+
+const [show, setShow] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== 'undefined') { 
+      if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
+        setShow(true); 
+      } else { // if scroll up show the navbar
+        setShow(false);  
+      }
+      // remember current page location to use in the next move
+      setLastScrollY(window.scrollY); 
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener('scroll', controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
+*/
+
+
 
 const Navbar = () => {
 
@@ -15,36 +46,30 @@ const Navbar = () => {
       };
 
     // HIDE ON SCROLL
-    const [show, setShow] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(0);
-  
-    const controlNavbar = () => {
-      if (typeof window !== 'undefined') { 
-        if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
-          setShow(true); 
-        } else { // if scroll up show the navbar
-          setShow(false);  
-        }
-  
-        // remember current page location to use in the next move
-        setLastScrollY(window.scrollY); 
-      }
-    };
-  
-    useEffect(() => {
-      if (typeof window !== 'undefined') {
-        window.addEventListener('scroll', controlNavbar);
-  
-        // cleanup function
-        return () => {
-          window.removeEventListener('scroll', controlNavbar);
-        };
-      }
-    }, [lastScrollY]);
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+const [visible, setVisible] = useState(true)
+
+const handleScroll = () => {
+    const currentScrollPos = window.scrollY
+
+    if(currentScrollPos > prevScrollPos){
+        setVisible(false)
+    }else{
+        setVisible(true)
+    }
+
+    setPrevScrollPos(currentScrollPos)
+}
+
+useEffect( () => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll)
+})
+
 
     return <>
     <div className='w-full h-20 z-[100] inline-block '>
-          <div className={`active ${show && 'hidden'}`}>
+          <div className={`h-[14vh] sticky ${visible ? '' : 'ease-in duration-200 hidden'} `} id='navbar'>
           <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
           <Link href='/'>
                 <div className='pl-[20px] flex items-center'>
@@ -68,6 +93,7 @@ const Navbar = () => {
                 </div>
             </div>
             </div>
+            
         </div>
         {/* END MAIN NAVBAR */}
         {/* PHONE/TABLET NAVBAR */}
