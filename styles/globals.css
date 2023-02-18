@@ -59,10 +59,14 @@ li{
 
 .headerbackground{
   background-image: url('../public/backgroundimagebk.jpeg');
-  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  
+  background-attachment: fixed;
+}
+
+.headerbackgroundsmall{
+  background-image: url('../public/backgroundimagebk.jpeg');
+  background-position: center;
 }
 
 .bg{

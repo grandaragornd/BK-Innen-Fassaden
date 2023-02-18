@@ -3,9 +3,9 @@ import React from 'react'
 
 const kontakt = () => {
   return (
-      <main className='w-full headertext h-screen'>
+      <div className='w-full headertext'>
       {/*contact card*/}
-      <div className="">
+      <div className="h-screen">
         <div className="max-w-full m-auto items-center gap-10">
           <div className="p-5 w-auto block">
           <form action="https://getform.io/f/86537289-4693-4bb5-b5fa-ef02736c1a18" method="POST">
@@ -69,7 +69,7 @@ const kontakt = () => {
           </div>
         </div>
       </div>
-      </main>
+      </div>
   )
 }
 

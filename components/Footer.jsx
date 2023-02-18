@@ -2,12 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import { AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai";
-import { Logobk, Logosmall } from './svgs';
 import logotransparentwhite from '../public/logotransparentwhite.png'
 
 const Footer = () => {
   return (
-    <div className='p-5 w-full items-center justify-between flex bg-[#064da0] text-white h-[15vh]'>
+    <div className='p-5 w-full items-center justify-between flex bg-[#064da0] text-white h-[15vh] inline-block'>
       <div className='flex flex-col text-center'>
         <Link href='/'>
         <Image src={logotransparentwhite} alt='logo' height='110' width='110'></Image>
