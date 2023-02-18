@@ -102,3 +102,9 @@ li{
   71% {margin-top:0px;} /* 5% delay */
   100% {margin-top:0px;}
 }
+
+@supports (-webkit-touch-callout: none) {
+  .intro {
+    background-attachment: scroll;
+  }
+}

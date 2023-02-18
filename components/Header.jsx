@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
   return (
     <>
-    <div className='headerbackground headerbackgroundsmall h-[70vh]'>
+    <div className='headerbackground headerbackgroundsmall h-[70vh] intro'>
         {/*}<div className='top-0 left-0 right-0 bottom-0 bg-black/70 h-[60vh] z-[1]'></div>{*/}
         <div className='text-center w-full items-center py-[150px]' id='header'>
           <h2 className='text-3xl sm:text-5xl font-semibold text-[white] headertext uppercase'>BK Innenputz & Fassaden GmbH</h2>
