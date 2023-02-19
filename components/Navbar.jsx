@@ -50,7 +50,7 @@ const Navbar = () => {
           <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
           <Link href='/'>
                 <div className='pl-[20px] flex items-center'>
-                    <Image src={Logotrs} alt='logo' height='120' width='120' className='scale-[0.8]'></Image>
+                    <Image src={Logotrs} alt='logo' height='120' width='120' className='scale-[0.8]' priority></Image>
                     <p className='text-sm hover:text-[#0868d9] inline-block'>BK Innenputz & Fassaden GmbH</p>  
                 </div>
             </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
                     {/* INSIDEMENU */}
                     <div>
                         <div className='p-10 flex w-full items-center justify-between bg-[#064da0] text-white shadow-lg'>
-                        <Image src={logotransparentwhite} alt='logo' height='150' width='150'></Image>
+                        <Image src={logotransparentwhite} alt='logo' height='150' width='150' priority></Image>
                             <div onClick={handleNav} className='rounded-full shadow-lg p-3 cursor-pointer'>
                             <AiOutlineClose size={25}/>
                             </div>
