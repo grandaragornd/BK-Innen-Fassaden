@@ -43,36 +43,15 @@ const Navbar = () => {
       };
 
     // HIDE ON SCROLL
-    const [prevScrollPos, setPrevScrollPos] = useState(0);
-const [visible, setVisible] = useState(true)
-
-const handleScroll = () => {
-    const currentScrollPos = window.scrollY
-
-    if(currentScrollPos > prevScrollPos){
-        setVisible(false)
-    }else{
-        setVisible(true)
-    }
-
-    setPrevScrollPos(currentScrollPos)
-}
-
-useEffect( () => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll)
-
-})
-
-
+    
     return <>
     <div className='w-full h-20 z-[100] inline-block '>
-          <div className={`${visible ? '' : 'hidden'} `} id='navbar'>
+          <div id='navbar'>
           <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
           <Link href='/'>
                 <div className='pl-[20px] flex items-center'>
-                    <Image src={Logotrs} alt='logo' height='120' width='120'></Image>
-                    <p className='text-md hover:text-[#0868d9]'>BK Innenputz & Fassaden GmbH</p>  
+                    <Image src={Logotrs} alt='logo' height='120' width='120' className='scale-[0.8]'></Image>
+                    <p className='text-sm hover:text-[#0868d9] inline-block'>BK Innenputz & Fassaden GmbH</p>  
                 </div>
             </Link>
             <div className='px-[20px]'>
