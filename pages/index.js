@@ -29,11 +29,11 @@ export default function Home() {
       <Header />
       <div className='w-full inline-block grid grid-cols-1 sm:grid-cols-2'>
         <div className='w-full p-[50px]'>
-            <h2 className='text-2xl font-semibold'>Das Bauunternehmen aus Hamburg fur vielfaltige Bauvorhaven</h2>
+            <h2 className='text-3xl font-semibold'>Das Bauunternehmen aus Hamburg fur vielfaltige Bauvorhaven</h2>
             <p className='text-xl py-10'>Herzlich Willkommen bei BK Innenputz & Fassadem Gmbh, <br /> Eine gute Bauwiese allein macht nock keine gute Maschine. Sie sollte bestandig und zuverlassig sein und dabei ihr Leben leichter machen. Unsere Arbeiten erfullen diesen Anspruch.</p>
         </div>
         <div className='w-full p-[50px]'>
-          <h2 className='text-2xl font-semibold'>Unsere Leistungen</h2>
+          <h2 className='text-3xl font-semibold'>Unsere Leistungen</h2>
           <p className='py-5 text-xl'>
           Die BK Innenputz & Fassaden GmbH ist Ihr zuverlässiger, treuer und fairer Ansprechpartner für Bauvorhaben jeglicher Art in Norddeutschland. 
           Unsere Mitarbeiter mit jeweils 20 Jahren Erfahrung auf den jeweiligen Gebieten, werden sich sauber, fachgerecht und professionell um ihr Vorhaben kümmern.

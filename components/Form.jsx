@@ -10,7 +10,7 @@ const Form = () => {
           <div className="p-[50px] w-auto block">
           <form action="https://getform.io/f/86537289-4693-4bb5-b5fa-ef02736c1a18" method="POST">
             <div className='inline-block'>
-                <h2 className='text-2xl font-semibold py-3'>Kontakt Formular</h2>
+                <h2 className='text-3xl font-semibold py-3'>Kontakt Formular</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-2">
               <div className="flex items-center">
