@@ -2,6 +2,7 @@
 import ContactForm from '@/components/ContactForm'
 import Form from '@/components/Form'
 import Header from '@/components/Header'
+import Navbar from '@/components/Navbar'
 import { Logobk } from '@/components/svgs'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -24,8 +25,8 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
+      <Navbar />
       <Header />
-
       <div className='w-full inline-block grid grid-cols-1 sm:grid-cols-2'>
         <div className='w-full p-[50px]'>
             <h2 className='text-2xl font-semibold'>Das Bauunternehmen aus Hamburg fur vielfaltige Bauvorhaven</h2>

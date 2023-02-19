@@ -2,9 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import { Link } from 'react-scroll'
 import {AiOutlineArrowDown} from 'react-icons/ai'
+import CustomNavbar from '@/components/CustomNavbar'
 
 const leistungen = () => {
   return (
+    <>
+    {/* custom navbar */}
+    <CustomNavbar />
+    {/* End custom navbar */}
     <div class="inline-block">
       <div className='p-5 py-5 w-full'>
         <h2 className='text-4xl font-semibold'>Unsere Leistungen im Überblick</h2>
@@ -133,6 +138,7 @@ const leistungen = () => {
             </div> 
         </div>
     </div>
+    </>
   )
 }
 

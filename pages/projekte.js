@@ -1,9 +1,12 @@
+import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import React from 'react';
 
 const projekte = () => {
   
   return (
+    <>
+    <Navbar />
     <div className='inline-block h-screen p-4'>
       <h1 className='text-4xl text-center'>Coming soon!</h1>
       <div className='p-5 inline-block flex justify-center'>
@@ -19,6 +22,7 @@ const projekte = () => {
       <h2>Slider</h2>
       </div>
     </div>
+    </>
   )
 }
 

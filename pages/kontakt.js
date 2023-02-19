@@ -1,7 +1,10 @@
+import Navbar from '@/components/Navbar'
 import React from 'react'
 
 const kontakt = () => {
   return (
+    <>
+    <Navbar />
     <div className='w-full flex justify-center headerbackground'>
           <div className="p-[50px] inline-block max-w-max m-auto">
           <form action="https://getform.io/f/86537289-4693-4bb5-b5fa-ef02736c1a18" method="POST">
@@ -64,6 +67,7 @@ const kontakt = () => {
           </form>
         </div>
     </div>
+    </>
   )
 }
 

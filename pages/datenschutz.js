@@ -1,7 +1,10 @@
+import Navbar from '@/components/Navbar'
 import React from 'react'
 
 const datenschutz = () => {
   return (
+    <>
+    <Navbar />
     <div className='inline-block'>
         <div className='p-[40px]'>
         <div className='p-4'>
@@ -113,6 +116,7 @@ Bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten
         </div>
         </div>
     </div>
+    </>
   )
 }
 

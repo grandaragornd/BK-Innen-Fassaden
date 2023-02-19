@@ -1,7 +1,10 @@
+import Navbar from '@/components/Navbar'
 import React from 'react'
 
 const impressum = () => {
   return (
+    <>
+    <Navbar />
     <div className='inline-block'>
         <div className='p-[40px]'>
         <div className='p-4'>
@@ -33,6 +36,7 @@ const impressum = () => {
         </div>
         </div>
     </div>
+    </>
   )
 }
 
