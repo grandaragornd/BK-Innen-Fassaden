@@ -7,14 +7,20 @@
   DARK grey #5c5c5c
   font-family: 'DM Sans', sans-serif;
 */
-#navbar{
-  transition: top 0.3s;
+
+html{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+body {
+  
+  min-width: fit-content;
 }
 
-body {
-	line-height: 1;
-  position: absolute;
-}
+#footer{}
+
 
 .svg{
   width: 24%;

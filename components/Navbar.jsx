@@ -34,9 +34,6 @@ const [show, setShow] = useState(false);
   }, [lastScrollY]);
 
 */
-
-
-
 const Navbar = () => {
 
   const [nav, setNav] = useState(false);
@@ -64,6 +61,7 @@ const handleScroll = () => {
 useEffect( () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll)
+
 })
 
 
