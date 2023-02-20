@@ -29,8 +29,8 @@ export default function Home() {
       <Header />
       <div className='w-full inline-block grid grid-cols-1 sm:grid-cols-2'>
         <div className='w-full p-[50px]'>
-            <h2 className='text-3xl font-semibold'>Das Bauunternehmen aus Hamburg fur vielfaltige Bauvorhaven</h2>
-            <p className='text-xl py-10'>Herzlich Willkommen bei BK Innenputz & Fassadem Gmbh, <br /> Eine gute Bauwiese allein macht nock keine gute Maschine. Sie sollte bestandig und zuverlassig sein und dabei ihr Leben leichter machen. Unsere Arbeiten erfullen diesen Anspruch.</p>
+            <h2 className='text-3xl font-semibold'>Das Bauunternehmen aus Hamburg für vielfältige Bauvorhaben</h2>
+            <p className='text-xl py-10'>Herzlich Willkommen bei BK Innenputz & Fassadem Gmbh, <br /> Eine gute Bauweise allein macht noch keine gute Maschine. Sie sollte beständig und zuverlässig sein und dabei ihr Leben leichter machen. Unsere Arbeiten erfüllen diesen Anspruch. </p>
         </div>
         <div className='w-full p-[50px]'>
           <h2 className='text-3xl font-semibold'>Unsere Leistungen</h2>

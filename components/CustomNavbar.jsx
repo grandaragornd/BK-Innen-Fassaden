@@ -48,6 +48,7 @@ useEffect( () => {
                     <Link href='/'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Startseite</li></Link>
                     <Link href='/leistungen'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Leistungen</li></Link>
                     <Link href='/projekte'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Projekte</li></Link>
+                    <Link href='/teams'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Team</li></Link>
                     <Link href='/kontakt' className='px-5'><li className='text-xl hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] hover:bg-[#0868d9] text-white rounded-xl'>Kontakt</li></Link>
                     <div className='flex px-[30px] items-center'>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://api.whatsapp.com/send/?phone=4917636082388&text&type=phone_number&app_absent=0' target='_blank'><AiOutlineWhatsApp size={25}></AiOutlineWhatsApp></Link></li>
@@ -82,6 +83,7 @@ useEffect( () => {
                               <Link href='/'><li className='text-xl' onClick={handleNav}>Startseite</li></Link>
                               <Link href='/leistungen'><li className='text-xl' onClick={handleNav}>Leistungen</li></Link>
                               <Link href='/projekte'><li className='text-xl' onClick={handleNav}>projekte</li></Link>
+                              <Link href='/teams'><li className='text-xl' onClick={handleNav}>team</li></Link>
                               <Link href='/kontakt'><li className='text-xl' onClick={handleNav}>kontakt</li></Link>
                             </ul>
                         </div>
