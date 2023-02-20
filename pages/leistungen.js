@@ -49,17 +49,15 @@ const leistungen = () => {
         <Link to='gebau'spy={true} smooth={true} offset={50} duration={500} activeClass='active'>
             <div className='rounded-lg p-2 cursor-pointer m-auto bg-[#064da0] text-xl hover:bg-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>
                 <h2 className='py-2'>Gebäudereinigung</h2>
+                <span id='innen'></span>
                 <AiOutlineArrowDown  size={25} className='w-full'/>
             </div>
         </Link>
         </div>
       </div>
-      
-
-
 
         <div className="px-[40px] flex-col grid sm:grid-cols-1 gap-4">
-        <span id='innen'></span>
+
           {/* comments */}
             <div class="w-full p-5 inline-block grid grid-cols-1 sm:grid-cols-2 items-center gap-5">
                 <div>
