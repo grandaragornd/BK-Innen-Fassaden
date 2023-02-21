@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React, {useState, useEffect } from 'react'
-import { AiOutlineClose, AiOutlineMenu, AiOutlineWhatsApp, AiOutlineInstagram} from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu, AiOutlineWhatsApp, AiOutlineInstagram, AiOutlinePhone} from "react-icons/ai";
 import Image from 'next/image';
 import Logotrs from '../public/Logotrs.png'
 import logotransparentwhite from '../public/logotransparentwhite.png'
@@ -56,12 +56,14 @@ const Navbar = () => {
             </Link>
             <div className='px-[20px]'>
                 <ul className='uppercase hidden md:flex'>
-                    <Link href='/'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Startseite</li></Link>
-                    <Link href='/leistungen'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Leistungen</li></Link>
-                    <Link href='/projekte'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Projekte</li></Link>
-                    <Link href='/teams'><li className='text-xl hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Team</li></Link>
-                    <Link href='/kontakt' className='px-5'><li className='text-xl hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] hover:bg-[#0868d9] text-white rounded-xl'>Kontakt</li></Link>
-                    <div className='flex px-[30px] items-center'>
+                    <Link href='/'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Startseite</li></Link>
+                    <Link href='/leistungen'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Leistungen</li></Link>
+                    <Link href='/projekte'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Projekte</li></Link>
+                    <Link href='/teams'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Team</li></Link>
+                    <Link href='/kontakt' className='px-5'><li className='text-lg hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] hover:bg-[#0868d9] text-white rounded-xl'>Kontakt</li></Link>
+                    <div className='flex items-center'>
+                      <span className=''>+123456789</span>
+                        <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><AiOutlinePhone  size={25}/></li>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://api.whatsapp.com/send/?phone=4917636082388&text&type=phone_number&app_absent=0' target='_blank'><AiOutlineWhatsApp size={25}></AiOutlineWhatsApp></Link></li>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://www.instagram.com/bkgmbh/' target='_blank'><AiOutlineInstagram size={25}></AiOutlineInstagram></Link></li>
                     </div>
