@@ -109,7 +109,7 @@ const projektanfrage = () => {
               <span><input type='checkbox' required></input></span>
               <p className='text-lg px-4 text-white headertext'>Ich habe die Datenschutzerklärung zur Kenntnis genommen und erkläre mich damit einverstanden.*</p>
             </div>
-            <div className="flex text-center items-center justify-around">
+            <div className="flex text-center items-center justify-around py-[50px]">
                 <div className='rounded-lg text-xl'><button type='submit' className="p-4 w-auto rounded-lg shadow-lg bg-white text-[#064da0] hover:bg-[#0868d9]  hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none">Absenden</button></div>
                 <div className='rounded-lg text-xl'><button type='reset' className="p-4 w-auto rounded-lg shadow-lg bg-white text-[#064da0] hover:bg-[#0868d9] hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none">Löschen</button></div> 
             </div>

@@ -58,7 +58,7 @@ const Navbar = () => {
                 <ul className='uppercase hidden md:flex'>
                     <Link href='/'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Startseite</li></Link>
                     <Link href='/leistungen'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Leistungen</li></Link>
-                    <Link href='/projekte'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Projekte</li></Link>
+                    <Link href='/projektanfrage'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Projekte</li></Link>
                     <Link href='/teams'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Team</li></Link>
                     <Link href='/kontakt' className='px-5'><li className='text-lg hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] hover:bg-[#0868d9] text-white rounded-xl'>Kontakt</li></Link>
                     <div className='flex items-center'>

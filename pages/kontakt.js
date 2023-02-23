@@ -5,6 +5,12 @@ const kontakt = () => {
   return (
     <>
     <Navbar />
+    <div className='h-[30vh] bg-[#064da0] text-white headertext'>
+      <div className='p-5 max-w-max m-auto'>
+        <h2 className='text-3xl'>Treten Sie mit uns in Kontakt</h2>
+        <p>loreem</p>
+      </div>
+    </div>
     <div className='w-full flex justify-center headerbackground'>
           <div className="p-[50px] inline-block max-w-max m-auto">
           <form action="https://getform.io/f/86537289-4693-4bb5-b5fa-ef02736c1a18" method="POST">

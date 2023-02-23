@@ -6,6 +6,7 @@ import logotransparentwhite from '../public/logotransparentwhite.png'
 
 const Footer = () => {
   return (
+    <>
     <div className='p-5 w-full items-center justify-between flex bg-[#064da0] text-white h-[15vh] inline-block'>
     <div className='flex flex-col text-center'>
       <Link href='/'>
@@ -22,6 +23,17 @@ const Footer = () => {
     <li className='hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://www.instagram.com/bkgmbh/' target='_blank'><AiOutlineInstagram size={25}></AiOutlineInstagram></Link></li>
   </ul>
   </div>
+  <div className='py-5 bg-[#064da0] text-white px-[50px]'>
+    <ul className='grid grid-cols-1 sm:grid-cols-3 text-center'>
+      <Link href='/leistungen'><li>Innen&Außenputz</li></Link>
+      <Link href='/leistungen'><li>Fugenarbeiten</li></Link>
+      <Link href='/leistungen'><li>Wärmedämmverbundsysteme</li></Link>
+      <Link href='/leistungen'><li>Spachtelarbeiten</li></Link>
+      <Link href='/leistungen'><li>Altbausanierung</li></Link>
+      <Link href='/leistungen'><li>Gebäudereinigung</li></Link>
+    </ul>
+  </div>
+  </>
   )
 }
 
