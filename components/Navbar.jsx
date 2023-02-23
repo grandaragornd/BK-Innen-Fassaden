@@ -45,35 +45,34 @@ const Navbar = () => {
     // HIDE ON SCROLL
     
     return <>
-    <div className='w-full h-20 z-[100] inline-block '>
-          <div id='navbar'>
-          <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
-          <Link href='/'>
+    <div className='w-full h-20 z-[100] inline-block'>
+          <div className='flex justify-between items-center w-full h-20 bg-white fixed'>
+            <div id='logo'>
+            <Link href='/'>
                 <div className='pl-[20px] flex items-center'>
                     <Image src={Logotrs} alt='logo' height='120' width='120' className='scale-[0.8]' priority></Image>
                     <p className='text-sm hover:text-[#0868d9] inline-block'>BK Innenputz & Fassaden GmbH</p>  
                 </div>
             </Link>
-            <div className='px-[20px]'>
-                <ul className='uppercase hidden md:flex'>
+            </div>
+            <div id='nav-links'>
+              <ul className='uppercase hidden md:flex'>
                     <Link href='/'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Startseite</li></Link>
                     <Link href='/leistungen'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Leistungen</li></Link>
-                    <Link href='/projektanfrage'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Projekte</li></Link>
+                    <Link href='/projekte'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Projekte</li></Link>
                     <Link href='/teams'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Team</li></Link>
-                    <Link href='/kontakt' className='px-5'><li className='text-lg hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] hover:bg-[#0868d9] text-white rounded-xl'>Kontakt</li></Link>
+                    <Link href='/kontakt' className='pr-4'><li className='text-lg hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] hover:bg-[#0868d9] text-white rounded-xl'>Kontakt</li></Link>
+                    <Link href='/projektanfrage'><li className='text-lg hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] hover:bg-[#0868d9] text-white rounded-xl'>Projektanfrage</li></Link>
                     <div className='flex items-center'>
-                      <span className=''>+123456789</span>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><AiOutlinePhone  size={25}/></li>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://api.whatsapp.com/send/?phone=4917636082388&text&type=phone_number&app_absent=0' target='_blank'><AiOutlineWhatsApp size={25}></AiOutlineWhatsApp></Link></li>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://www.instagram.com/bkgmbh/' target='_blank'><AiOutlineInstagram size={25}></AiOutlineInstagram></Link></li>
                     </div>
                 </ul>
-                <div onClick={handleNav} className='md:hidden cursor-pointer px-5'>
-                    <AiOutlineMenu size={25}/>
-                </div>
-            </div>
-            </div>
-            
+              </div>
+              <div onClick={handleNav} className='md:hidden cursor-pointer px-5'>
+                  <AiOutlineMenu size={25}/>
+              </div>
         </div>
         {/* END MAIN NAVBAR */}
         {/* PHONE/TABLET NAVBAR */}
