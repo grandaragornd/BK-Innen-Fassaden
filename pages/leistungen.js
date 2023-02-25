@@ -59,8 +59,8 @@ const leistungen = () => {
         <div className="px-[40px] flex-col grid sm:grid-cols-1 gap-4">
 
           {/* comments */}
-            <div class="w-full p-5 inline-block grid grid-cols-1 sm:grid-cols-2 items-center gap-5">
-                <div>
+            <div className="w-full p-5 inline-block grid grid-cols-1 sm:grid-cols-2 items-center gap-5">
+                <div className='flex justify-center'>
                     <Image className='rounded-xl' src='https://jimdo-storage.freetls.fastly.net/image/170285040/29a433da-d81a-488b-8495-1fe22a0281f9.jpg?format=pjpg&quality=80,90&auto=webp&disable=upscale&width=1280&height=1180&trim=0,837,0,837' height='250' width='500'/>
                 </div>
                 <div className='py-5'>
@@ -75,7 +75,7 @@ const leistungen = () => {
             </div>
             
             <div className="w-full inline-block p-5 grid grid-cols-1 sm:grid-cols-2 items-center gap-5">
-                <div>
+                <div className='flex justify-center'>
                     <Image className='rounded-xl'  src='https://jimdo-storage.freetls.fastly.net/image/170285344/35d974b5-f83a-40ce-a7fe-f9dea1c053f7.jpg?format=pjpg&quality=80,90&auto=webp&disable=upscale&width=1280&height=1024&trim=0,480,0,480' height='250' width='500'/>
                 </div>
                 <div className="py-5">
@@ -87,7 +87,7 @@ const leistungen = () => {
                 </div>
             </div>
             <div className="w-full inline-block p-5 grid grid-cols-1 sm:grid-cols-2 items-center gap-5" >
-                <div>
+                <div className='flex justify-center'>
                     <Image className='rounded-xl'  src='https://jimdo-storage.freetls.fastly.net/image/170286259/ce965f6b-177d-4294-8ba6-db5bf9183137.jpg?format=pjpg&quality=80,90&auto=webp&disable=upscale&width=1280&height=1229&trim=0,1375,0,1375' height='250' width='500'/>
                 </div>
                 <div className="py-5" >
@@ -99,7 +99,7 @@ const leistungen = () => {
                 </div>
             </div>
             <div className="w-full inline-block p-5 grid grid-cols-1 sm:grid-cols-2 items-center gap-5" >
-                <div>
+                <div className='flex justify-center'>
                     <Image className='rounded-xl'  src='https://jimdo-storage.freetls.fastly.net/image/170286505/a254ee21-d44c-459d-bd94-9c681a2816b5.jpg?format=pjpg&quality=80,90&auto=webp&disable=upscale&width=1440&height=1154&trim=0,445,0,446' height='250' width='500'/>
                 </div>
                 <div className="py-5">
@@ -110,8 +110,8 @@ const leistungen = () => {
                     <span id='altbau'></span>
                 </div>
             </div>
-            <div class="w-full inline-block p-5 grid grid-cols-1 sm:grid-cols-2 items-center gap-5" >
-                <div>
+            <div className="w-full inline-block p-5 grid grid-cols-1 sm:grid-cols-2 items-center gap-5" >
+                <div className='flex justify-center'>
                     <Image className='rounded-xl'  src='https://jimdo-storage.freetls.fastly.net/image/170286714/eabce42f-8759-4814-bf7d-df5b03391d3d.jpg?format=pjpg&quality=80,90&auto=webp&disable=upscale&width=1440&height=1259&trim=0,768,0,887' height='250' width='500'/>
                 </div>
                 <div className="py-5" >
@@ -121,8 +121,8 @@ const leistungen = () => {
                     </p>
                 </div>
             </div>
-            <div class="w-full inline-block p-5 grid grid-cols-1 sm:grid-cols-2 items-center gap-5" id='gebau'>
-                <div>
+            <div className="w-full inline-block p-5 grid grid-cols-1 sm:grid-cols-2 items-center gap-5" id='gebau'>
+                <div className='flex justify-center'>
                     <Image className='rounded-xl'  src='https://jimdo-storage.freetls.fastly.net/image/170287218/d3a5d2ac-0d2b-4af6-8224-d9f82fd8f2c5.jpg?format=pjpg&quality=80,90&auto=webp&disable=upscale&width=1440&height=1153&trim=0,500,0,500' height='250' width='500'/>
                 </div>
                 <div className="py-5" >

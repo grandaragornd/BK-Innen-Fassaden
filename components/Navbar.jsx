@@ -51,7 +51,7 @@ const Navbar = () => {
             <Link href='/'>
                 <div className='pl-[20px] flex items-center'>
                     <Image src={Logotrs} alt='logo' height='120' width='120' className='scale-[0.8]' priority></Image>
-                    <p className='text-sm hover:text-[#0868d9] inline-block'>BK Innenputz & Fassaden GmbH</p>  
+                    <span className='text-sm sm:hidden lg:inline-block hover:text-[#0868d9] inline-block'>BK Innenputz & Fassaden GmbH</span>  
                 </div>
             </Link>
             </div>
@@ -63,13 +63,13 @@ const Navbar = () => {
                     <Link href='/teams'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Team</li></Link>
                     <Link href='/kontakt' className='pr-4'><li className='text-lg hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] hover:bg-[#0868d9] text-white rounded-xl'>Kontakt</li></Link>
                     <Link href='/projektanfrage'><li className='text-lg hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] hover:bg-[#0868d9] text-white rounded-xl'>Projektanfrage</li></Link>
-                    <div className='flex items-center'>
+                </ul>
+              </div>
+              <div className='flex items-center'>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><AiOutlinePhone  size={25}/></li>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://api.whatsapp.com/send/?phone=4917636082388&text&type=phone_number&app_absent=0' target='_blank'><AiOutlineWhatsApp size={25}></AiOutlineWhatsApp></Link></li>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://www.instagram.com/bkgmbh/' target='_blank'><AiOutlineInstagram size={25}></AiOutlineInstagram></Link></li>
                     </div>
-                </ul>
-              </div>
               <div onClick={handleNav} className='md:hidden cursor-pointer px-5'>
                   <AiOutlineMenu size={25}/>
               </div>
