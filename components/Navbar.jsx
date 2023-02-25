@@ -65,11 +65,11 @@ const Navbar = () => {
                     <Link href='/projektanfrage'><li className='text-lg hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] hover:bg-[#0868d9] text-white rounded-xl'>Projektanfrage</li></Link>
                 </ul>
               </div>
-              <div className='flex items-center'>
-                        <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><AiOutlinePhone  size={25}/></li>
+              <div className='flex items-center pr-[25px]'>
+                        <a href="#" data-replace="+4917636082388" id='animation' className='hover:w-[9rem] p-[10px]'><span><AiOutlinePhone size={25}/></span></a>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://api.whatsapp.com/send/?phone=4917636082388&text&type=phone_number&app_absent=0' target='_blank'><AiOutlineWhatsApp size={25}></AiOutlineWhatsApp></Link></li>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://www.instagram.com/bkgmbh/' target='_blank'><AiOutlineInstagram size={25}></AiOutlineInstagram></Link></li>
-                    </div>
+              </div>
               <div onClick={handleNav} className='md:hidden cursor-pointer px-5'>
                   <AiOutlineMenu size={25}/>
               </div>

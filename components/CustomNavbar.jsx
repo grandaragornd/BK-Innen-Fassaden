@@ -41,7 +41,7 @@ useEffect( () => {
             <Link href='/'>
                 <div className='pl-[20px] flex items-center'>
                     <Image src={Logotrs} alt='logo' height='120' width='120' className='scale-[0.8]' priority></Image>
-                    <p className='text-sm hover:text-[#0868d9] inline-block'>BK Innenputz & Fassaden GmbH</p>  
+                    <span className='text-sm hidden lg:inline-block hover:text-[#0868d9] inline-block'>BK Innenputz & Fassaden GmbH</span> 
                 </div>
             </Link>
             </div>
