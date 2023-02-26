@@ -97,6 +97,7 @@ const Navbar = () => {
                               <Link href='/projekte'><li className='text-xl' onClick={handleNav}>projekte</li></Link>
                               <Link href='/teams'><li className='text-xl' onClick={handleNav}>team</li></Link>
                               <Link href='/kontakt'><li className='text-xl' onClick={handleNav}>kontakt</li></Link>
+                              <Link href='/projektanfrage'><li className='text-xl' onClick={handleNav}>projectanfrage</li></Link>
                             </ul>
                         </div>
                         {/* end section */}

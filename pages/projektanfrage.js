@@ -8,8 +8,19 @@ const projektanfrage = () => {
     <div className='w-full flex justify-center bg-[#064da0] inline-block'>
           <div className="p-[50px] inline-block max-w-max m-auto">
           <form action="https://getform.io/f/86537289-4693-4bb5-b5fa-ef02736c1a18" method="POST">
-            <div className='inline-block'>
-                <h2 className='text-3xl font-semibold py-3 text-white headertext'>Projeck Anfrage Formular</h2>
+            <div className='inline-block text-white headertext'>
+                <h2 className='text-3xl font-semibold py-3'>Projeck Anfrage Formular</h2>
+                <h2 className='text-xl py-2'>Wir realisieren ihre vision</h2>
+                <p className='text-xl'>Nutzen Sie das unten stehende Formular und schildern Sie möglichst ausführlich Ihr Vorhaben.
+                  <br />
+                  Nennen Sie uns auch Ihren gewünschten Projektzeitraum.
+                  <br />
+                  Sie können zur Präzisierung des Vorhabens  Projektskizzen oder Grundrisse in den Formaten GIF, JPEG, doc, xls oder PDF hochladen.</p>
+                  <p className='py-3 text-xl'>
+                  Unser effizientes Büroteam wird sich innerhalb von 24 h an Werktagen bei Ihnen dazu melden.
+                  <br />
+                  Alle personenbezogenen Daten unterliegen der DSVGO.
+                  </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-2">
                 <div>
@@ -50,7 +61,7 @@ const projektanfrage = () => {
                     </div>
                     <div className='py-2'>
                       <input id="bordered-checkbox-1" type="checkbox" name="Wärmedämmverbundsysteme" className="w-4 h-4 text-blue-600 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600"></input>
-                      <label className='px-[10px] text-white text-xl'>Wärmedämmverbundsysteme</label>
+                      <label className='px-[10px] text-white text-xl'>Wärmedämmverbundsystem</label>
                     </div>
                     <div className='py-2'>
                       <input id="bordered-checkbox-1" type="checkbox" name="Altbausanierung" className="w-4 h-4 text-blue-600 bg-gray-100 rounded focus:ring-blue-500 dark:focus:ring-blue-600"></input>

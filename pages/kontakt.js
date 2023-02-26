@@ -5,10 +5,24 @@ const kontakt = () => {
   return (
     <>
     <Navbar />
-    <div className='h-[30vh] bg-[#064da0] text-white headertext'>
-      <div className='p-5 max-w-max m-auto'>
-        <h2 className='text-3xl'>Treten Sie mit uns in Kontakt</h2>
-        <p>loreem</p>
+    <div className='bg-[#064da0] text-white headertext'>
+      <div className='p-5 grid grid-cols-1 sm:grid-cols-3'>
+        <div className=' flex justify-center items-center text-center'>
+          <h2 className='text-3xl'>Treten Sie mit uns in Kontakt!</h2>
+        </div>
+        <div className='text-center'>
+        <h2 className='py-4 text-2xl font-semibold'>Kontakt</h2>
+        <p className='py-2  text-xl'>Tel.: 040 / 181 851 04</p>
+        <p className='py-2 text-xl'>Fax: 040 / 181 851 06</p>
+        <p className='py-2 text-xl'>Mobil: 0176 / 360 823 88</p>
+        <p className='py-2 text-xl'>info@bk-bauputz-hh.de</p>
+        </div> 
+        <div className='text-center'>
+        <h2 className='py-4 text-2xl font-semibold'>Unsere Adresse</h2>
+            <p className='py-2 text-xl'>BK Innenputz & Fassaden GmbH</p>
+            <p className='py-2 text-xl'>Brandstücken 23</p>
+            <p className='py-2 text-xl'>22549 Hamburg</p>
+        </div> 
       </div>
     </div>
     <div className='w-full flex justify-center headerbackground'>
