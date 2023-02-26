@@ -46,7 +46,7 @@ useEffect( () => {
             </Link>
             </div>
             <div id='nav-links'>
-              <ul className='uppercase hidden md:flex'>
+              <ul className='uppercase hidden specialflex landscapemode'>
                     <Link href='/'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Startseite</li></Link>
                     <Link href='/leistungen'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Leistungen</li></Link>
                     <Link href='/projekte'><li className='text-lg hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>Projekte</li></Link>
@@ -55,12 +55,12 @@ useEffect( () => {
                     <Link href='/projektanfrage'><li className='text-lg hover:text-white hover:scale-[0.9] ease-in duration-200 transform-none bg-[#064da0] hover:bg-[#0868d9] text-white rounded-xl'>Projektanfrage</li></Link>
                 </ul>
               </div>
-              <div className='flex items-center pr-[25px] hidden md:flex'>
+              <div className='flex items-center pr-[25px] hidden socialbuttons'>
                         <a href="tel:4917636082388" data-replace="+4917636082388" id='animation' className='hover:w-[9rem] hover:bg-[#064da0] hover:p-[5px] hover:ml-[15px] hover:rounded-lg hover:ease-in duration-200 transform-none'><span className='px-[10px]' id='telefonenumber'><AiOutlinePhone size={25}/></span></a>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://api.whatsapp.com/send/?phone=4917636082388&text&type=phone_number&app_absent=0' target='_blank'><AiOutlineWhatsApp size={25}></AiOutlineWhatsApp></Link></li>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://www.instagram.com/bkgmbh/' target='_blank'><AiOutlineInstagram size={25}></AiOutlineInstagram></Link></li>
                     </div>
-              <div onClick={handleNav} className='md:hidden cursor-pointer px-5'>
+              <div onClick={handleNav} className='hamburgertrigger cursor-pointer px-5'>
                   <AiOutlineMenu size={25}/>
               </div>
             </div>
