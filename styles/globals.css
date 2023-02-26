@@ -153,3 +153,26 @@ li{
     background-attachment: scroll;
   }
 }
+
+@media (min-width: 1086px) {
+  .landscapemode {
+     display: hidden;
+  }
+}
+@media (min-width: 1086px) {
+  .specialflex {
+      display: flex;
+  }
+}
+
+@media (min-width: 1086px) {
+  .hamburgertrigger {
+      display: none;
+  }
+}
+
+@media (min-width: 1086px) {
+  .socialbuttons {
+      display: flex;
+  }
+}
