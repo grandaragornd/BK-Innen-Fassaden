@@ -7,6 +7,9 @@
   DARK grey #5c5c5c
   font-family: 'DM Sans', sans-serif;
 */
+#telefonenumber{
+  padding-top: 4px;
+}
 
 html{
   margin: 0;
@@ -33,20 +36,18 @@ body {
   left: 0;
 }
 #animation::before {
-  height: 2px;
-  bottom: 0;
   transform-origin: 100% 50%;
   transform: scaleX(0);
   transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
 }
 #animation::after {
   content: attr(data-replace);
-  height: 100%;
-  top: 0;
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
   transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: #064da0;
+  color: white;
+  padding-left: 10px;
+  padding-top: 4px;
 }
 
 #animation:hover::before {
@@ -65,7 +66,6 @@ body {
 #animation:hover span {
   transform: translate3d(-200%, 0, 0);
 }
-
 
 .svg{
   width: 24%;
