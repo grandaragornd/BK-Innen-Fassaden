@@ -18,13 +18,13 @@ const karriere = () => {
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 items-center'>
                 <div className='cursor-pointer text-center rounded-lg bg-[#064da0] h-[200px] text-white hover:bg-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>
-                    <div className='font-semibold text-4xl py-[50px]'>
+                    <div className='font-semibold sm:text-4xl text-3xl py-[50px]'>
                         <p>TROCKENBAU</p>
                         <p>(M/W/D)</p>
                     </div>
                 </div>
                 <div className='text-center rounded-lg bg-[#064da0] h-[200px] text-white hover:bg-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>
-                    <div className='cursor-pointer font-semibold text-4xl py-[50px]'>
+                    <div className='cursor-pointer font-semibold sm:text-4xl text-3xl py-[50px]'>
                         <p>KAUFMÄNNISCHER</p>
                         <p>(M/W/D)</p>
                     </div>
