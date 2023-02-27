@@ -119,9 +119,10 @@ const leistungen = () => {
                     <p className="text-xl">
                     Lassen Sie Altbauten im neuen Glanz erstrahlen! Dank jahrelanger Erfahrung bieten wir einzigartige Altbausanierungsarbeiten an. Unser Team führt die Wiederinstandsetzung und die energetische Sanierung gemäß neuester Standards durch.
                     </p>
+                    <span id='gebau'></span>
                 </div>
             </div>
-            <div className="w-full inline-block p-5 grid grid-cols-1 sm:grid-cols-2 items-center gap-5" id='gebau'>
+            <div className="w-full inline-block p-5 grid grid-cols-1 sm:grid-cols-2 items-center gap-5" >
                 <div className='flex justify-center'>
                     <Image className='rounded-xl'  src='https://jimdo-storage.freetls.fastly.net/image/170287218/d3a5d2ac-0d2b-4af6-8224-d9f82fd8f2c5.jpg?format=pjpg&quality=80,90&auto=webp&disable=upscale&width=1440&height=1153&trim=0,500,0,500' height='250' width='500'/>
                 </div>
