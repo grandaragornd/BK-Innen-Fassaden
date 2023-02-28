@@ -18,10 +18,15 @@ const [visible, setVisible] = useState(true)
 
 const handleScroll = () => {
     const currentScrollPos = window.scrollY
-
+    
     if(currentScrollPos > prevScrollPos){
+        
         setVisible(false)
     }else{
+        setVisible(true)
+    } 
+
+    if(window.scrollY <= 106){
         setVisible(true)
     }
 
@@ -35,13 +40,13 @@ useEffect( () => {
 })
     return <>
     <div className='w-full h-20 z-[100] inline-block '>
-          <div className={`${visible ? '' : 'hidden'} `} id='navbar'>
+          <nav className={`${visible ? '' : 'hidden'} `} id='navbar'>
           <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
             <div id='logo'>
             <Link href='/'>
-                <div className='pl-[20px] flex items-center'>
-                    <Image src={Logotrs} alt='logo' height='120' width='120' className='scale-[0.8]' priority></Image>
-                    <span className='text-sm lg:inline-block hover:text-[#0868d9] inline-block'>BK Innenputz & Fassaden GmbH</span> 
+                <div className='flex items-center'>
+                    <Image src={Logotrs} alt='logo' height='120' width='120' className='scale-[1]' priority></Image>
+                    <span className='text-sm lg:inline-block hover:text-[#0868d9] inline-block pt-[15px]'>BK Innenputz & Fassaden GmbH</span> 
                 </div>
             </Link>
             </div>
@@ -61,12 +66,12 @@ useEffect( () => {
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://api.whatsapp.com/send/?phone=4917636082388&text&type=phone_number&app_absent=0' target='_blank'><AiOutlineWhatsApp size={25}></AiOutlineWhatsApp></Link></li>
                         <li className='hover:text-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://www.instagram.com/bkgmbh/' target='_blank'><AiOutlineInstagram size={25}></AiOutlineInstagram></Link></li>
                     </div>
-              <div onClick={handleNav} className='hamburgertrigger cursor-pointer px-5'>
+              <div onClick={handleNav} className='hamburgertrigger cursor-pointer px-5 pt-[10px]'>
                   <AiOutlineMenu size={25}/>
               </div>
             </div>
             
-        </div>
+        </nav>
         {/* END MAIN NAVBAR */}
         {/* PHONE/TABLET NAVBAR */}
             <div className={nav ? 'fixed left-0 top-0 w-full h-[150vh] bg-black/70' : ''}>

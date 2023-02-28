@@ -49,9 +49,9 @@ const Navbar = () => {
           <div className='flex justify-between items-center w-full h-20 bg-white fixed'>
             <div id='logo'>
             <Link href='/'>
-                <div className='pl-[20px] flex items-center'>
-                    <Image src={Logotrs} alt='logo' height='120' width='120' className='scale-[0.8]' priority></Image>
-                    <span className='text-sm lg:inline-block hover:text-[#0868d9] inline-block'>BK Innenputz & Fassaden GmbH</span>  
+                <div className='flex items-center'>
+                    <Image src={Logotrs} alt='logo' height='120' width='120' className='scale-[1]' priority></Image>
+                    <span className='text-sm lg:inline-block hover:text-[#0868d9] inline-block pt-[15px]'>BK Innenputz & Fassaden GmbH</span>  
                 </div>
             </Link>
             </div>

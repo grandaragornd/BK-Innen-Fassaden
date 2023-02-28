@@ -5,6 +5,7 @@ import { AiOutlineWhatsApp, AiOutlineInstagram, AiOutlinePhone } from "react-ico
 import logotransparentwhite from '../public/logotransparentwhite.png'
 
 const Footer = () => {
+
   return (
     <>
     <div className='p-5 w-full items-center justify-between flex bg-[#064da0] text-white h-[15vh] inline-block'>
