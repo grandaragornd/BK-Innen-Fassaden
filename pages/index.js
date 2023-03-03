@@ -25,6 +25,7 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
+      <div className='scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100'>
       <Navbar />
       <Header />
       <div className='w-full inline-block grid grid-cols-1 sm:grid-cols-2'>
@@ -63,6 +64,7 @@ export default function Home() {
       </section>
       <Form />
       <ContactForm />
+      </div>
     </>
   )
 }

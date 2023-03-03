@@ -5,35 +5,7 @@ import Image from 'next/image';
 import Logotrs from '../public/Logotrs.png'
 import logotransparentwhite from '../public/logotransparentwhite.png'
 
-/* navbar on scroll hide 
 
-const [show, setShow] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  const controlNavbar = () => {
-    if (typeof window !== 'undefined') { 
-      if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
-        setShow(true); 
-      } else { // if scroll up show the navbar
-        setShow(false);  
-      }
-      // remember current page location to use in the next move
-      setLastScrollY(window.scrollY); 
-    }
-  };
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', controlNavbar);
-
-      // cleanup function
-      return () => {
-        window.removeEventListener('scroll', controlNavbar);
-      };
-    }
-  }, [lastScrollY]);
-
-*/
 const Navbar = () => {
 
   const [nav, setNav] = useState(false);
@@ -42,10 +14,34 @@ const Navbar = () => {
         setNav(prev => !prev);
       };
 
-    // HIDE ON SCROLL
-    
+      const [prevScrollPos, setPrevScrollPos] = useState(0);
+      const [visible, setVisible] = useState(true)
+      
+      const handleScroll = () => {
+          const currentScrollPos = window.scrollY
+          
+          if(currentScrollPos > prevScrollPos){
+              
+              setVisible(false)
+          }else{
+              setVisible(true)
+          } 
+      
+          if(window.scrollY <= 90){
+              setVisible(true)
+          }
+      
+          setPrevScrollPos(currentScrollPos)
+      }
+      
+      useEffect( () => {
+          window.addEventListener('scroll', handleScroll);
+      
+          return () => window.removeEventListener('scroll', handleScroll)
+      })
     return <>
     <div className='w-full h-20 z-[100] inline-block'>
+      <nav className={`${visible ? '' : 'hidden'} `}>
           <div className='flex justify-between items-center w-full h-20 bg-white fixed'>
             <div id='logo'>
             <Link href='/'>
@@ -75,6 +71,7 @@ const Navbar = () => {
                   <AiOutlineMenu size={25}/>
               </div>
         </div>
+        </nav>
         {/* END MAIN NAVBAR */}
         {/* PHONE/TABLET NAVBAR */}
             <div className={nav ? 'fixed left-0 top-0 w-full h-[150vh] bg-black/70' : ''}>
@@ -83,7 +80,7 @@ const Navbar = () => {
                   : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
                   }>
                     {/* INSIDEMENU */}
-                    <div>
+                    <div className='overflow-scroll'>
                         <div className='p-10 flex w-full items-center justify-between bg-[#064da0] text-white shadow-lg'>
                         <Image src={logotransparentwhite} alt='logo' height='150' width='150' priority></Image>
                             <div onClick={handleNav} className='rounded-full shadow-lg p-3 cursor-pointer'>
