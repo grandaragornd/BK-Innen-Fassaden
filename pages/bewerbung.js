@@ -1,4 +1,5 @@
 import BewerbungForm from '@/components/BewerbungForm'
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import React from 'react'
 
@@ -7,6 +8,7 @@ const bewerbung = () => {
     <>
         <Navbar />
         <BewerbungForm />
+        <Footer />
     </>
     
   )

@@ -33,21 +33,25 @@ const Navbar = () => {
       
           setPrevScrollPos(currentScrollPos)
       }
+
+     
       
       useEffect( () => {
           window.addEventListener('scroll', handleScroll);
       
           return () => window.removeEventListener('scroll', handleScroll)
       })
+
+     
     return <>
     <div className='w-full h-20 z-[100] inline-block'>
-      <nav className={`${visible ? '' : 'hidden'} `}>
+      <nav className={`${visible ? 'shownav' : 'hidenav'}`}>
           <div className='flex justify-between items-center w-full h-20 bg-white fixed'>
             <div id='logo'>
             <Link href='/'>
                 <div className='flex items-center'>
                     <Image src={Logotrs} alt='logo' height='120' width='120' className='scale-[1]' priority></Image>
-                    <span className='text-sm lg:inline-block hover:text-[#0868d9] inline-block pt-[15px]'>BK Innenputz & Fassaden GmbH</span>  
+                    <span className='text-sm lg:inline-block hover:text-[#0868d9] inline-block'>BK Innenputz & Fassaden GmbH</span>  
                 </div>
             </Link>
             </div>

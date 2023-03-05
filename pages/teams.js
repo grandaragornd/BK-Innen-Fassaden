@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import React from 'react'
 import Image from 'next/image'
+import Footer from '@/components/Footer'
 
 const teams = () => {
   return (
@@ -58,6 +59,7 @@ const teams = () => {
     </div>
 
     </div>
+    <Footer />
     </>
   )
 }

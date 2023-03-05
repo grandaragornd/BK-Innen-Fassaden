@@ -1,12 +1,10 @@
-
+import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image';
 import { AiOutlineWhatsApp, AiOutlineInstagram, AiOutlinePhone } from "react-icons/ai";
 import logotransparentwhite from '../public/logotransparentwhite.png'
 
-const Footer = () => {
- 
-  
+const CustomFooter = () => {
   return (
     <>
     <div className='p-5 w-full items-center justify-between flex bg-[#064da0] text-white h-[15vh] inline-block'>
@@ -26,18 +24,8 @@ const Footer = () => {
     <li className='hover:scale-[0.9] ease-in duration-200 transform-none'><Link href='https://www.instagram.com/bkgmbh/' target='_blank'><AiOutlineInstagram size={25}></AiOutlineInstagram></Link></li>
   </ul>
   </div>
-  <div className='py-5 bg-[#064da0] text-white px-[50px]'>
-    <ul className='grid grid-cols-1 sm:grid-cols-3 text-center'>
-      <Link href='/leistungen#innen'><li>Innen&Außenputz</li></Link>
-      <Link href='/leistungen#fugen'><li>Fugenarbeiten</li></Link>
-      <Link href='/leistungen#warme'><li>Wärmedämmverbundsysteme</li></Link>
-      <Link href='/leistungen#spach'><li>Spachtelarbeiten</li></Link>
-      <Link href='/leistungen#altbau'><li>Altbausanierung</li></Link>
-      <Link href='/leistungen#gebau'><li>Gebäudereinigung</li></Link>
-    </ul>
-  </div>
   </>
   )
 }
 
-export default Footer
+export default CustomFooter

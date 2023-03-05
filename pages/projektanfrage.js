@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import React from 'react'
 
@@ -127,6 +128,7 @@ const projektanfrage = () => {
           </form>
         </div>
     </div>
+    <Footer />
     </>
   )
 }

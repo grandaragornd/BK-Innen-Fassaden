@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import React from 'react';
@@ -22,6 +23,7 @@ const projekte = () => {
       <h2>Slider</h2>
       </div>
     </div>
+    <Footer />
     </>
   )
 }

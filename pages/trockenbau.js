@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import React from 'react'
 import Link from 'next/link'
+import Footer from '@/components/Footer'
 
 const trockenbau = () => {
   return (
@@ -63,6 +64,7 @@ const trockenbau = () => {
             </Link>
         </div>
       </div>
+      <Footer />
     </>
     
   )

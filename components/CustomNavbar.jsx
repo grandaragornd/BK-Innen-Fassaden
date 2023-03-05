@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Logotrs from '../public/Logotrs.png'
 import logotransparentwhite from '../public/logotransparentwhite.png'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineWhatsApp, AiOutlineInstagram, AiOutlinePhone} from "react-icons/ai";
+import Footer from './Footer';
 
 const CustomNavbar = () => {
     const [nav, setNav] = useState(false);
@@ -20,7 +21,6 @@ const handleScroll = () => {
     const currentScrollPos = window.scrollY
     
     if(currentScrollPos > prevScrollPos){
-        
         setVisible(false)
     }else{
         setVisible(true)
@@ -28,7 +28,66 @@ const handleScroll = () => {
 
     if(window.scrollY <= 106){
         setVisible(true)
+    } 
+
+    if(window.scrollY === 848){
+        setVisible(false)
     }
+    if(window.scrollY === 1734){
+        setVisible(false)
+    }
+    if(window.scrollY === 2342){
+        setVisible(false)
+    }
+    if(window.scrollY === 2964){
+        setVisible(false)
+    }
+    if(window.scrollY === 1733){
+        setVisible(false)
+    }
+    if(window.scrollY === 1710){
+        setVisible(false)
+    }
+    if(window.scrollY === 3572){
+        setVisible(false)
+    }
+    if(window.scrollY === 1684){
+        setVisible(false)
+    }
+    if(window.scrollY === 4256){
+        setVisible(false)
+    }
+    if(window.scrollY === 1710){
+        setVisible(false)
+    }
+    if(window.scrollY === 4250){
+        setVisible(false)
+    }
+    if(window.scrollY === 3562){
+        setVisible(false)
+    }
+    if(window.scrollY === 2949.333251953125){
+        setVisible(false)
+    }
+    if(window.scrollY === 2322){
+        setVisible(false)
+    }
+    if(window.scrollY === 1676){
+        setVisible(false)
+    }
+    if(window.scrollY === 2307.333251953125){
+        setVisible(false)
+    }
+    if(window.scrollY === 2957.333251953125){
+        setVisible(false)
+    }
+    if(window.scrollY === 3589.333251953125){
+        setVisible(false)
+    }
+    if(window.scrollY === 4270.66650390625){
+        setVisible(false)
+    }
+
 
     setPrevScrollPos(currentScrollPos)
 }
@@ -38,15 +97,17 @@ useEffect( () => {
 
     return () => window.removeEventListener('scroll', handleScroll)
 })
+
+
     return <>
     <div className='w-full h-20 z-[100] inline-block '>
-          <nav className={`${visible ? '' : 'hidden'} `} id='navbar'>
+          <nav className={`${visible ? 'shownav' : 'hidenav'} `} id='navbar'>
           <div className='flex justify-between items-center w-full h-20 bg-white shadow-lg fixed'>
             <div id='logo'>
             <Link href='/'>
                 <div className='flex items-center'>
                     <Image src={Logotrs} alt='logo' height='120' width='120' className='scale-[1]' priority></Image>
-                    <span className='text-sm lg:inline-block hover:text-[#0868d9] inline-block pt-[15px]'>BK Innenputz & Fassaden GmbH</span> 
+                    <span className='text-sm lg:inline-block hover:text-[#0868d9] inline-block'>BK Innenputz & Fassaden GmbH</span> 
                 </div>
             </Link>
             </div>
@@ -110,6 +171,7 @@ useEffect( () => {
                 </div>
             </div>
         </div>
+            
             </>
 }
 

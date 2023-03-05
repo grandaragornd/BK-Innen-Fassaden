@@ -67,6 +67,23 @@ body {
   transform: translate3d(-200%, 0, 0);
 }
 
+
+
+
+
+.hidenav{
+  opacity: 0;
+  transition: 0.25s;
+  transition-timing-function: ease-out;
+  
+}
+
+.shownav{
+  opacity: 1;
+  transition: 0.25s;
+  transition-timing-function: ease-in;
+}
+
 .navanimation{
   transition: transform 0.2s;
 }
