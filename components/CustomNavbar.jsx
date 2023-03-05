@@ -87,6 +87,10 @@ const handleScroll = () => {
     if(window.scrollY === 4270.66650390625){
         setVisible(false)
     }
+    if(window.scrollY === 388.6666564941406){
+        setVisible(false)
+    }
+    
 
 
     setPrevScrollPos(currentScrollPos)
