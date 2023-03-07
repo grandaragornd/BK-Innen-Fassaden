@@ -8,7 +8,7 @@ const projektanfrage = () => {
     <Navbar />
     <div className='w-full flex justify-center bg-[#064da0] inline-block'>
           <div className="p-[50px] inline-block max-w-max m-auto">
-          <form action="https://getform.io/f/86537289-4693-4bb5-b5fa-ef02736c1a18" method="POST">
+          <form action="https://getform.io/f/2d8e20cc-f6d8-40c7-9b5a-cbc31669a85d" method="POST">
             <div className='inline-block text-white headertext'>
                 <h2 className='text-3xl font-semibold py-3'>Projeck Anfrage Formular</h2>
                 <h2 className='text-xl py-2'>Wir realisieren ihre vision</h2>
@@ -118,7 +118,7 @@ const projektanfrage = () => {
                 <input id="bordered-checkbox-1" type="file" name="Gebäudereinigung" className='text-white'></input>
             </div>
             <div className='py-2 flex items-center'>
-              <span><input type='checkbox' required></input></span>
+              <span><input type='checkbox' name='daten' required></input></span>
               <p className='text-lg px-4 text-white headertext'>Ich habe die Datenschutzerklärung zur Kenntnis genommen und erkläre mich damit einverstanden.*</p>
             </div>
             <div className="flex text-center items-center justify-around py-[50px]">
