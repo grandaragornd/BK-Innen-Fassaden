@@ -30,68 +30,24 @@ const handleScroll = () => {
         setVisible(true)
     } 
 
-    if(window.scrollY === 848){
+    if(window.scrollY >= 820 && window.scrollY < 1190){
+        setVisible(false)
+    } 
+    if(window.scrollY >= 1640 && window.scrollY < 2006){
         setVisible(false)
     }
-    if(window.scrollY === 1734){
+    if(window.scrollY >= 2295 && window.scrollY < 2715){
+        setVisible(false)
+    } 
+    if(window.scrollY >= 2920 && window.scrollY < 3306){
+        setVisible(false)
+    } 
+    if(window.scrollY >= 3570 && window.scrollY < 3956){
         setVisible(false)
     }
-    if(window.scrollY === 2342){
+    if(window.scrollY >= 4275 && window.scrollY < 4634){
         setVisible(false)
-    }
-    if(window.scrollY === 2964){
-        setVisible(false)
-    }
-    if(window.scrollY === 1733){
-        setVisible(false)
-    }
-    if(window.scrollY === 1710){
-        setVisible(false)
-    }
-    if(window.scrollY === 3572){
-        setVisible(false)
-    }
-    if(window.scrollY === 1684){
-        setVisible(false)
-    }
-    if(window.scrollY === 4256){
-        setVisible(false)
-    }
-    if(window.scrollY === 1710){
-        setVisible(false)
-    }
-    if(window.scrollY === 4250){
-        setVisible(false)
-    }
-    if(window.scrollY === 3562){
-        setVisible(false)
-    }
-    if(window.scrollY === 2949.333251953125){
-        setVisible(false)
-    }
-    if(window.scrollY === 2322){
-        setVisible(false)
-    }
-    if(window.scrollY === 1676){
-        setVisible(false)
-    }
-    if(window.scrollY === 2307.333251953125){
-        setVisible(false)
-    }
-    if(window.scrollY === 2957.333251953125){
-        setVisible(false)
-    }
-    if(window.scrollY === 3589.333251953125){
-        setVisible(false)
-    }
-    if(window.scrollY === 4270.66650390625){
-        setVisible(false)
-    }
-    if(window.scrollY === 388.6666564941406){
-        setVisible(false)
-    }
-    
-
+    } 
 
     setPrevScrollPos(currentScrollPos)
 }
