@@ -30,22 +30,22 @@ const handleScroll = () => {
         setVisible(true)
     } 
 
-    if(window.scrollY >= 820 && window.scrollY < 1190){
+    if(window.scrollY >= 799 && window.scrollY < 1190){
         setVisible(false)
     } 
     if(window.scrollY >= 1640 && window.scrollY < 2006){
         setVisible(false)
     }
-    if(window.scrollY >= 2295 && window.scrollY < 2715){
+    if(window.scrollY >= 2100 && window.scrollY < 2715){
         setVisible(false)
     } 
-    if(window.scrollY >= 2920 && window.scrollY < 3306){
+    if(window.scrollY >= 2290 && window.scrollY < 3000){
         setVisible(false)
     } 
-    if(window.scrollY >= 3570 && window.scrollY < 3956){
+    if(window.scrollY >= 3510 && window.scrollY < 3956){
         setVisible(false)
     }
-    if(window.scrollY >= 4275 && window.scrollY < 4634){
+    if(window.scrollY >= 4200 && window.scrollY < 4634){
         setVisible(false)
     } 
 

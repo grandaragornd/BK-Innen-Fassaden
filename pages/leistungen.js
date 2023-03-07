@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Link } from 'react-scroll'
 import {AiOutlineArrowDown} from 'react-icons/ai'
 import CustomNavbar from '@/components/CustomNavbar'
-import CustomFooter from '@/components/CustomFooter'
+import Footer from '@/components/Footer'
 
 const leistungen = () => {
   return (
@@ -138,51 +138,8 @@ const leistungen = () => {
             </div> 
 
         </div>
-
-        <div className='p-4 w-full inline-block'>
-        <div className='text-center text-white grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
-        <Link to='innen' spy={true} smooth={true} offset={50} duration={500}>
-            <div className='rounded-lg p-2 cursor-pointer bg-[#064da0] text-xl hover:bg-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>
-                 <h2 className='py-2'>Innen & Außenputz</h2>
-                 <AiOutlineArrowDown  size={25} className='w-full'/>
-            </div>
-        </Link>
-        <Link to='fugen'spy={true} smooth={true} offset={50} duration={500} activeClass='active'>
-            <div className='rounded-lg p-2 cursor-pointer m-auto bg-[#064da0] text-xl hover:bg-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>
-                <h2 className='py-2'>Fugenarbeiten</h2>
-                <AiOutlineArrowDown  size={25} className='w-full'/>
-            </div>
-        </Link>
-        <Link to='warme'spy={true} smooth={true} offset={50} duration={500} activeClass='active'>
-            <div className='rounded-lg p-2 cursor-pointer m-auto bg-[#064da0] text-xl hover:bg-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>
-                <h2 className='py-2'>Wärmedämmverbundsysteme</h2>
-                <AiOutlineArrowDown  size={25} className='w-full'/>
-            </div>
-        </Link>
-        <Link to='spach'spy={true} smooth={true} offset={50} duration={500} activeClass='active'>
-            <div className='rounded-lg p-2 cursor-pointer m-auto bg-[#064da0] text-xl hover:bg-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>
-                <h2 className='py-2'>Spachtelarbeiten</h2>
-                <AiOutlineArrowDown  size={25} className='w-full'/>
-            </div>
-        </Link>
-        <Link to='altbau'spy={true} smooth={true} offset={50} duration={500} activeClass='active'>
-            <div className='rounded-lg p-2 cursor-pointer m-auto bg-[#064da0] text-xl hover:bg-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>
-                <h2 className='py-2'>Altbausanierung</h2>
-                <AiOutlineArrowDown  size={25} className='w-full'/>
-            </div>
-        </Link>
-        <Link to='gebau'spy={true} smooth={true} offset={50} duration={500} activeClass='active'>
-            <div className='rounded-lg p-2 cursor-pointer m-auto bg-[#064da0] text-xl hover:bg-[#0868d9] hover:scale-[0.9] ease-in duration-200 transform-none'>
-                <h2 className='py-2'>Gebäudereinigung</h2>
-                <span id='innen'></span>
-                <AiOutlineArrowDown  size={25} className='w-full'/>
-            </div>
-        </Link>
-        </div>
-      </div>
-
     </div>
-    <CustomFooter />
+    <Footer />
     </>
   )
 }

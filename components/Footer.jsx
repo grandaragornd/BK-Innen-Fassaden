@@ -28,12 +28,12 @@ const Footer = () => {
   </div>
   <div className='py-5 bg-[#064da0] text-white px-[50px]'>
     <ul className='grid grid-cols-1 sm:grid-cols-3 text-center'>
-      <Link href='/leistungen#innen'><li>Innen&Außenputz</li></Link>
-      <Link href='/leistungen#fugen'><li>Fugenarbeiten</li></Link>
-      <Link href='/leistungen#warme'><li>Wärmedämmverbundsysteme</li></Link>
-      <Link href='/leistungen#spach'><li>Spachtelarbeiten</li></Link>
-      <Link href='/leistungen#altbau'><li>Altbausanierung</li></Link>
-      <Link href='/leistungen#gebau'><li>Gebäudereinigung</li></Link>
+      <Link href='/leistungen#innen'><li className='cursor-pointer hover:scale-[0.9] ease-in duration-200 transform-none'>Innen&Außenputz</li></Link>
+      <Link href='/leistungen#fugen'><li className='cursor-pointer hover:scale-[0.9] ease-in duration-200 transform-none'>Fugenarbeiten</li></Link>
+      <Link href='/leistungen#warme'><li className='cursor-pointer hover:scale-[0.9] ease-in duration-200 transform-none'>Wärmedämmverbundsysteme</li></Link>
+      <Link href='/leistungen#spach'><li className='cursor-pointer hover:scale-[0.9] ease-in duration-200 transform-none'>Spachtelarbeiten</li></Link>
+      <Link href='/leistungen#altbau'><li className='cursor-pointer hover:scale-[0.9] ease-in duration-200 transform-none'>Altbausanierung</li></Link>
+      <Link href='/leistungen#gebau'><li className='cursor-pointer hover:scale-[0.9] ease-in duration-200 transform-none'>Gebäudereinigung</li></Link>
     </ul>
   </div>
   </>
