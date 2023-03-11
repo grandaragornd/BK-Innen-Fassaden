@@ -10,12 +10,11 @@ const karriere = () => {
         <Navbar />
         <div className='w-full p-[50px] inline-block max-w-max m-auto'>
             <div className='p-5 justify-center'>
-                <h2 className='text-4xl font-semibold'>Karriere</h2>
+                <h2 className='text-4xl font-semibold'>Unsere stellenangebote</h2>
             </div>
             <div className='p-5'>
-                <h2 className='text-3xl'> Unsere stellenangebote</h2>
                 <p className='text-xl py-3'>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                Bk-innenputz und Fassaden ist seit Jahren ein fester Bestandteil der norddeutschen Baubranche und immer auf neue Projekte vorbereitet und einen stetigen Wachstum gewaffnet. Unser Unternehmen besteht aus Fachkräften und einem hocheffizienten Büro Team. Für die Verstärkung unseres Personals suchen wir immer neue Mitarbeiter und freuen uns auf die Zusammenarbeit. Auf sie warten vielfältige Aufgaben, spanndende Konstellationen mit anderen neuen Firmen und neuen Herausforderungen. Wenn sie sich für eine Karriere in einem Team vorstellen können, bewerben sie sich gerne bei uns.
                 </p>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 items-center'>
