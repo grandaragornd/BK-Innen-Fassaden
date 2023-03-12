@@ -10,7 +10,7 @@ const karriere = () => {
         <Navbar />
         <div className='w-full p-[50px] inline-block max-w-max m-auto'>
             <div className='p-5 justify-center'>
-                <h2 className='text-4xl font-semibold'>Unsere stellenangebote</h2>
+                <h2 className='text-4xl font-semibold'>Unsere Stellenangebote</h2>
             </div>
             <div className='p-5'>
                 <p className='text-xl py-3'>
