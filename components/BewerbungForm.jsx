@@ -7,7 +7,6 @@ const BewerbungForm = () => {
         <form action="https://getform.io/f/2d8e20cc-f6d8-40c7-9b5a-cbc31669a85d" method="POST">
             <div className='inline-block text-white headertext'>
                 <h2 className='text-3xl font-semibold py-3'>Bewerbung Formular</h2>
-                <h2 className='text-xl py-2'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, aliquid excepturi? Facere dolore eveniet voluptatibus quasi, tempore dicta harum sint veritatis deleniti ea, repellendus minima consequuntur explicabo amet sit doloremque?</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-2">
                 <div>
