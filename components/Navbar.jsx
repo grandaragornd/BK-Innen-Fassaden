@@ -44,7 +44,7 @@ const Navbar = () => {
 
      
     return <>
-    <div className='w-full h-20 z-[100] inline-block'>
+    <div className='w-full h-20 z-[100] inline-block fixed'>
       <nav className={`${visible ? 'shownav' : 'hidenav'}`}>
           <div className='flex justify-between items-center w-full h-20 bg-white fixed'>
             <div id='logo'>
