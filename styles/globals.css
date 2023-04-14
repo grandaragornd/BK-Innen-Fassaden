@@ -17,6 +17,7 @@ html{
 	border: 0;
 	font-size: 100%;
   list-style: none;
+  background-attachment: scroll
 }
 body {
   min-width: fit-content;
